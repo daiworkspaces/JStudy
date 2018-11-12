@@ -40,17 +40,13 @@ public class Compoundlnterest {
                //get last years's balances from previous row
                 double oldBalance =balances[i-1][j];
 
-
-
                 //计数利息
                 //compute interest
                 double interest = oldBalance * interestRate[j];
 
                 //计数这年的余额
                 //compute this year's balance
-
                 balances[i][j]=oldBalance+interest;
-
 
             }
 
